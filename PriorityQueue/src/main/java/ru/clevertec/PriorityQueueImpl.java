@@ -12,7 +12,7 @@ public class PriorityQueueImpl<T> {
     private Comparator<? super T> comparator;
 
     public PriorityQueueImpl() {
-        this(INITIAL_CAPACITY, null);
+        this(INITIAL_CAPACITY, (Comparator<? super T>) Comparator.naturalOrder());
     }
 
     public PriorityQueueImpl(Comparator<? super T> comparator) {
